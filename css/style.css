@@ -57,6 +57,118 @@ a {
 .neutral-star {
     color: var(--main-bg-color)
 }
+/***************** Header ********************/
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img{
+    width: 80px;
+    margin: 20px 20px 20px 0px;
+}
+
+nav a{
+    margin-right: 30px;
+    margin-left: 30px;
+    padding-top: 29px;
+}
+
+nav a:hover{
+    color: var(--main-color);
+    border-top: 3px var(--main-color) solid;
+}
+
+/************ search-and-filters **************/
+
+.search-and-filters{
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+/**************** Searchs *********************/
+
+.searchs{
+    display: flex;
+    padding: 10px;
+}
+
+.searchs i{
+    color: black;
+    padding: 15px 18px 15px 20px;
+    background-color: var(--main-bg-color);
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+input[type="search"]{
+    text-align: center;
+    border: 1px var(--main-bg-color) solid;
+}
+
+.searchs button{
+    background-color: var(--main-color);
+    color: white;
+    padding: 15px 20px 15px 20px;
+    border: 0;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+/**************** Filters *********************/
+
+.filters{
+    display: flex;
+    align-items: center;
+}
+
+.filterSelection{
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.element{
+    margin: 0px 5px 0px 5px;
+    padding: 0px 10px 0px 10px;
+    background-color: white;
+    border-radius: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border: 2px var(--main-bg-color) solid;
+}
+
+.element i,
+.element p{
+    padding-right: 5px;
+    padding-left: 5px;
+}
+
+.element:hover{
+    background-color: var(--filter-bg-color);
+    cursor: pointer;
+}
+
+/**************** Info *********************/
+
+.info{
+    display: flex;
+    align-items: center;
+}
+
+.info i{
+    padding: 6px 11px 6px 11px;
+    margin: 10px;
+    border: 2px var(--main-bg-color) solid;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 50%;
+}
 
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
