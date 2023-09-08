@@ -50,7 +50,7 @@ a {
     font-size: 16px;
 }
 
-.euro {
+.bold {
     font-weight: 700;
 }
 
@@ -99,25 +99,38 @@ nav a:hover{
     color: black;
     padding: 15px 18px 15px 20px;
     background-color: var(--main-bg-color);
-    border-top-left-radius: 20px;
-    border-bottom-left-radius: 20px;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 
 input[type="search"]{
     text-align: center;
-    border: 1px var(--main-bg-color) solid;
+    padding: 15px 10px 15px 10px;
+    margin: 0;
+     border: 1px var(--main-bg-color) solid;
 }
 
-.searchs button{
+button[type="submit"]{
     background-color: var(--main-color);
     color: white;
-    padding: 15px 20px 15px 20px;
     border: 0;
-    border-top-right-radius: 20px;
-    border-bottom-right-radius: 20px;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
     cursor: pointer;
 }
 
+.button-magnifying-glass-logo{
+    display: none;
+    border-radius: 15px;
+    color: white;
+}
+
+.button-magnifying-glass-logo i{
+    background-color:var(--main-color) ;
+    color: white;
+    border-radius: 15px;
+    padding: 10px;
+}
 /**************** Filters *********************/
 
 .filters{
@@ -188,6 +201,44 @@ input[type="search"]{
     width: 65%;
 }
 
+.hebergements-cards {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    margin-top: 33px;
+}
+
+.hebergements-cards img {
+    width: 100%;
+    height: 126px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+}
+
+.hebergements-cards .card-content {
+    padding-left: 15px;
+    box-sizing: border-box;
+}
+
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+
 /****** Populaires ***********/
 .populaires {
     width: 32%;
@@ -236,6 +287,7 @@ input[type="search"]{
 
 
 
+
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
 /****** Media queries ***********/
@@ -275,5 +327,18 @@ input[type="search"]{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+   
+
+/* ************* Search ***************** */
+    .button-magnifying-glass-logo{
+        display: initial;
+    }
+
+    input[type="search"]{
+        border-right: 0px;
+    }
+
+    .button-text{
+        display: none;
+    }
 }

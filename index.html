@@ -37,39 +37,41 @@
         <header>
             <img src="./images/logo/Booki.png" alt="Logo de l'agence Booki">
             <nav>
-                <a href="#hebergements">Hébergements</a>
-                <a href="#activites">Activités</a>
+                <a href="#buttonHeb">Hébergements</a>
+                <a href="#buttonActi">Activités</a>
             </nav> 
         </header>
+
         <main>
             <section class="search-and-filters">
                 <h2 class="section-title">Trouvez votre hébergements pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <div class="searchs">
+                <form class="searchs" method="get" action="">
                     <i class="fa-solid fa-location-dot"></i>
-                    <input class="euro" type="search" value="Marseille, France" id="searchBar">
-                    <button type="button" class="euro" for="searchBar">Rechercher</button>
-                </div>
+                    <input class="bold" type="search" value="Marseille, France">
+                    <button class="button-text bold" type="submit">Rechercher</button>
+                    <button class="button-magnifying-glass-logo bold" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </form>
             
                 <div class="filters">
                     <h3>Filtres</h3>
                     <div class="filterSelection">
                         <button class="element">
                             <i class="fa-solid fa-money-bill-wave"></i>
-                            <p class="euro">Economique</p>
+                            <p class="bold">Economique</p>
                         </button>
                         <button class="element">
                             <i class="fa-solid fa-person"></i>
-                            <p class="euro">Familial</p>
+                            <p class="bold">Familial</p>
                         </button>
                         <button class="element">
                             <i class="fa-solid fa-heart"></i>
-                            <p class="euro">Romantique</p>
+                            <p class="bold">Romantique</p>
                         </button>
                         <button class="element">
                             <i class="fa-solid fa-fire"></i>
-                            <p class="euro">Nos pépites</p>
+                            <p class="bold">Nos pépites</p>
                         </button>
                     </div>
                 </div>
@@ -79,12 +81,64 @@
                 </div>
             </section>
 
-            <div class="hebergements-and-populaires">
+
+
+            <div id="buttonHeb" class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <div class="hebergements-title">
-                        <h2 class="section-title">Hébergements à Marseille</h2>
+                    <h2 class="section-title">Hébergements à Marseille</h2>
+                    <div class="hebergements-cards">
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <h3 class="card-title">Hôtel du port</h3>
+                                    <p class="card-subtitle">Nuit à partir de 52<span class="bold">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <h3 class="card-title">Hôtel chez Amira</h3>
+                                    <p class="card-subtitle">Nuit à partir de 96<span class="bold">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
+                        <a href="#">
+                            <article class="card">
+                                <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
+                                <div class="card-content">
+                                    <h3 class="card-title">Hôtel Les mouettes</h3>
+                                    <p class="card-subtitle">Nuit à partir de 76<span class="bold">€</span></p>
+                                    <div class="card-rating">
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
+                                        <i class="fa-xs fa-solid fa-star neutral-star" aria-hidden="true"></i>
+                                        <span class="sr-only">Note de 4 sur 5</span>
+                                    </div>
+                                </div>
+                            </article>
+                        </a>
                     </div>
-                    
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -98,7 +152,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
-                                        <p class="card-subtitle">Nuit à partir de 128<span class="euro">€</span></p>
+                                        <p class="card-subtitle">Nuit à partir de 128<span class="bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -117,7 +171,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
-                                        <p class="card-subtitle">Nuit à partir de 71<span class="euro">€</span></p>
+                                        <p class="card-subtitle">Nuit à partir de 71<span class="bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -136,7 +190,7 @@
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
-                                        <p class="card-subtitle">Nuit à partir de 68<span class="euro">€</span></p>
+                                        <p class="card-subtitle">Nuit à partir de 68<span class="bold">€</span></p>
                                     </div>
                                     <div class="card-rating">
                                         <i class="fa-xs fa-solid fa-star" aria-hidden="true"></i>
@@ -154,7 +208,15 @@
             </div> <!-- END hebergements-and-populaires -->
         </main>
         <footer>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus et. Eget aliquet nibh praesent tristique magna sit amet purus. Enim ut sem viverra aliquet. Suspendisse ultrices gravida dictum fusce ut placerat orci. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eget aliquet nibh praesent tristique. Lobortis feugiat vivamus at augue eget arcu dictum varius. Sagittis aliquam malesuada bibendum arcu. Viverra nibh cras pulvinar mattis nunc sed blandit. Nisl tincidunt eget nullam non nisi est. Libero volutpat sed cras ornare arcu. Purus sit amet volutpat consequat mauris. Elit scelerisque mauris pellentesque pulvinar. Massa sed elementum tempus egestas. Leo duis ut diam quam nulla porttitor massa id neque. Massa sapien faucibus et molestie ac feugiat sed lectus. Non diam phasellus vestibulum lorem sed risus. Semper viverra nam libero justo laoreet sit amet cursus sit.
 
+                Sed pulvinar proin gravida hendrerit. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Sit amet aliquam id diam. Risus nec feugiat in fermentum posuere urna. Lectus quam id leo in vitae turpis massa sed. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vel turpis nunc eget lorem. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Est placerat in egestas erat. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Sed vulputate odio ut enim blandit volutpat maecenas. Tincidunt nunc pulvinar sapien et.
+                
+                Nisl rhoncus mattis rhoncus urna. Leo vel fringilla est ullamcorper eget nulla. Euismod in pellentesque massa placerat duis ultricies lacus sed. Id volutpat lacus laoreet non curabitur gravida. Pellentesque habitant morbi tristique senectus. Tristique senectus et netus et malesuada fames ac turpis egestas. Vel turpis nunc eget lorem dolor sed viverra ipsum. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Interdum consectetur libero id faucibus nisl tincidunt. Augue eget arcu dictum varius duis at consectetur lorem donec. Vulputate eu scelerisque felis imperdiet proin. Leo in vitae turpis massa sed. Pellentesque elit ullamcorper dignissim cras tincidunt. At tellus at urna condimentum. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Diam vel quam elementum pulvinar. Justo laoreet sit amet cursus sit. Tortor posuere ac ut consequat. Dolor sit amet consectetur adipiscing elit.
+                
+                Nullam non nisi est sit amet. Enim ut sem viverra aliquet eget sit. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Sed viverra tellus in hac habitasse platea. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Semper viverra nam libero justo laoreet sit amet cursus sit. Condimentum lacinia quis vel eros donec ac odio. Id leo in vitae turpis massa. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Cursus metus aliquam eleifend mi in nulla. Ornare arcu dui vivamus arcu felis. Purus in mollis nunc sed id semper risus in hendrerit. Sagittis vitae et leo duis ut diam quam. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Tortor consequat id porta nibh venenatis cras sed felis. Morbi tristique senectus et netus et malesuada fames. Pulvinar elementum integer enim neque volutpat ac. Tortor at risus viverra adipiscing at.
+                
+                Condimentum mattis pellentesque id nibh tortor. Amet consectetur adipiscing elit ut aliquam purus sit amet. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Turpis in eu mi bibendum. Mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus. Amet porttitor eget dolor morbi non arcu risus quis varius. Suspendisse sed nisi lacus sed viverra tellus in. Sem fringilla ut morbi tincidunt augue interdum velit. Leo duis ut diam quam nulla porttitor massa id neque. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Tincidunt vitae semper quis lectus. Morbi tristique senectus et netus et malesuada fames. Adipiscing tristique risus nec feugiat in. Ac felis donec et odio pellentesque diam volutpat commodo sed.</p>
         </footer>
     </div>
 </body>
