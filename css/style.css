@@ -85,6 +85,36 @@ nav a:hover{
     border-top: 3px var(--main-color) solid;
 }
 
+/***************** Footer *********************/
+
+footer{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+footer span{
+    font-weight: 700;
+    padding: 8px;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+}
+
+li{
+    padding: 8px;
+    list-style: none;
+}
+
 /************ search-and-filters **************/
 
 .search-and-filters{
@@ -332,6 +362,12 @@ button[type="submit"]{
 /****** Media queries ***********/
 /* Medium devices (tablets, less/equal than 1024px) */
 @media (max-width: 1024px) {
+
+/* ******** filters ********* */
+
+
+
+/* ****** heb and pop ******* */
     .hebergements-and-populaires {
         flex-direction: column;
     }
@@ -362,13 +398,15 @@ button[type="submit"]{
     .populaires-cards .card-subtitle {
         font-size: 13px;
     }
+
+
 }
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
    
 
-/* ************* Search ***************** */
+/* ******** Search ********** */
     .button-magnifying-glass-logo{
         display: initial;
     }
