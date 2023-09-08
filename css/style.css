@@ -104,10 +104,9 @@ nav a:hover{
 }
 
 input[type="search"]{
-    text-align: center;
     padding: 15px 10px 15px 10px;
     margin: 0;
-     border: 1px var(--main-bg-color) solid;
+    border: 1px var(--main-bg-color) solid;
 }
 
 button[type="submit"]{
