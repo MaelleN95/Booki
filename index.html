@@ -11,9 +11,6 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="https://kit.fontawesome.com/42a6605488.js" crossorigin="anonymous"></script>
 
@@ -21,57 +18,43 @@
 </head>
 
 <body>
-
-<!-- Ajout des icones -->
-    <!-- <i class="fa-solid fa-dog"></i>
-    <i class="fa-solid fa-info"></i>
-    <i class="fa-solid fa-star"></i>
-    <i class="fa-solid fa-person"></i>
-    <i class="fa-solid fa-chart-line"></i>
-    <i class="fa-solid fa-fire"></i> -->
-
-
-
-
     <div class="main-container">
         <header>
             <img src="./images/logo/Booki.png" alt="Logo de l'agence Booki">
             <nav>
-                <a href="#buttonHeb">Hébergements</a>
-                <a href="#buttonActi">Activités</a>
+                <ul>
+                    <li><a href="#HebergementsPart">Hébergements</a></li>
+                    <li><a href="#ActivitiesPart">Activités</a></li>
+                </ul>
             </nav> 
         </header> 
 
         <main>
             <section class="search-and-filters">
-                <h2 class="section-title">Trouvez votre hébergements pour des vacances de rêve</h2>
+                <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
 
-                <form class="searchs" method="get" action="">
+                <form class="searchs" method="get" action="#">
                     <i class="fa-solid fa-location-dot"></i>
                     <input class="bold" type="search" value="Marseille, France">
                     <button class="button-text bold" type="submit">Rechercher</button>
                     <button class="button-magnifying-glass-logo bold" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
-            
+
                 <div class="filters">
                     <h3>Filtres</h3>
-                    <div class="filterSelection">
-                        <button class="element">
-                            <i class="fa-solid fa-money-bill-wave"></i>
-                            <p class="bold">Economique</p>
+                    <div class="filter-selection">
+                        <button class="element bold">
+                            <i class="fa-solid fa-money-bill-wave"></i>Économique
                         </button>
-                        <button class="element">
-                            <i class="fa-solid fa-person"></i>
-                            <p class="bold">Familial</p>
+                        <button class="element bold">
+                            <i class="fa-solid fa-person"></i>Familial
                         </button>
-                        <button class="element">
-                            <i class="fa-solid fa-heart"></i>
-                            <p class="bold">Romantique</p>
+                        <button class="element bold">
+                            <i class="fa-solid fa-heart"></i>Romantique
                         </button>
-                        <button class="element">
-                            <i class="fa-solid fa-fire"></i>
-                            <p class="bold">Nos pépites</p>
+                        <button class="element bold">
+                            <i class="fa-solid fa-fire"></i>Nos pépites
                         </button>
                     </div>
                 </div>
@@ -81,8 +64,8 @@
                 </div>
             </section>
 
-            <div id="buttonHeb" class="hebergements-and-populaires">
-                <section class="hebergements">
+            <div class="hebergements-and-populaires">
+                <section id="HebergementsPart" class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
                         <a href="#">
@@ -189,7 +172,7 @@
                             </article>
                         </a> 
                     </div>
-                    <h3><a href="">Afficher plus</a></h3>
+                    <h3><a href="#">Afficher plus</a></h3>
                 </section>
 
                 <section class="populaires">
@@ -259,19 +242,62 @@
                 </section>
             </div> <!-- END hebergements-and-populaires -->
 
+            <section id="ActivitiesPart" class="activities">
+                <h2 class="section-title">Activités à Marseille</h2>
 
+                <div class="activities-cards">
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port avec des immeubles au fond">
+                            <h3 class="card-title">Vieux-Port</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort Pomègues">
+                            <h3 class="card-title">Fort de Pomègues</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Image de falaises avec la mer">
+                            <h3 class="card-title">Parc national des Calanques</h3>
+                        </article>
+                    </a>
+                    <a href="#">
+                        <article class="card">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Image de la cathédrale en haut de la colline">
+                            <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                        </article>
+                    </a>
+                </div>
+
+            </section>
             
         </main>
         <footer>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. At consectetur lorem donec massa sapien faucibus et. Eget aliquet nibh praesent tristique magna sit amet purus. Enim ut sem viverra aliquet. Suspendisse ultrices gravida dictum fusce ut placerat orci. Vulputate sapien nec sagittis aliquam malesuada bibendum. Eget aliquet nibh praesent tristique. Lobortis feugiat vivamus at augue eget arcu dictum varius. Sagittis aliquam malesuada bibendum arcu. Viverra nibh cras pulvinar mattis nunc sed blandit. Nisl tincidunt eget nullam non nisi est. Libero volutpat sed cras ornare arcu. Purus sit amet volutpat consequat mauris. Elit scelerisque mauris pellentesque pulvinar. Massa sed elementum tempus egestas. Leo duis ut diam quam nulla porttitor massa id neque. Massa sapien faucibus et molestie ac feugiat sed lectus. Non diam phasellus vestibulum lorem sed risus. Semper viverra nam libero justo laoreet sit amet cursus sit.
-
-                Sed pulvinar proin gravida hendrerit. Eu feugiat pretium nibh ipsum consequat nisl vel pretium. Sit amet aliquam id diam. Risus nec feugiat in fermentum posuere urna. Lectus quam id leo in vitae turpis massa sed. Luctus venenatis lectus magna fringilla urna porttitor rhoncus. Vel turpis nunc eget lorem. Vestibulum lorem sed risus ultricies tristique nulla aliquet enim. Rhoncus urna neque viverra justo nec ultrices dui sapien eget. Est placerat in egestas erat. Et pharetra pharetra massa massa ultricies mi quis hendrerit dolor. Sed vulputate odio ut enim blandit volutpat maecenas. Tincidunt nunc pulvinar sapien et.
-                
-                Nisl rhoncus mattis rhoncus urna. Leo vel fringilla est ullamcorper eget nulla. Euismod in pellentesque massa placerat duis ultricies lacus sed. Id volutpat lacus laoreet non curabitur gravida. Pellentesque habitant morbi tristique senectus. Tristique senectus et netus et malesuada fames ac turpis egestas. Vel turpis nunc eget lorem dolor sed viverra ipsum. Dis parturient montes nascetur ridiculus mus mauris vitae ultricies. Interdum consectetur libero id faucibus nisl tincidunt. Augue eget arcu dictum varius duis at consectetur lorem donec. Vulputate eu scelerisque felis imperdiet proin. Leo in vitae turpis massa sed. Pellentesque elit ullamcorper dignissim cras tincidunt. At tellus at urna condimentum. Amet consectetur adipiscing elit pellentesque habitant morbi tristique. Diam vel quam elementum pulvinar. Justo laoreet sit amet cursus sit. Tortor posuere ac ut consequat. Dolor sit amet consectetur adipiscing elit.
-                
-                Nullam non nisi est sit amet. Enim ut sem viverra aliquet eget sit. Cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla. Sed viverra tellus in hac habitasse platea. Orci phasellus egestas tellus rutrum tellus pellentesque eu tincidunt. Semper viverra nam libero justo laoreet sit amet cursus sit. Condimentum lacinia quis vel eros donec ac odio. Id leo in vitae turpis massa. Ullamcorper morbi tincidunt ornare massa eget egestas purus. Cursus metus aliquam eleifend mi in nulla. Ornare arcu dui vivamus arcu felis. Purus in mollis nunc sed id semper risus in hendrerit. Sagittis vitae et leo duis ut diam quam. Lacus sed viverra tellus in hac habitasse platea dictumst vestibulum. Tortor consequat id porta nibh venenatis cras sed felis. Morbi tristique senectus et netus et malesuada fames. Pulvinar elementum integer enim neque volutpat ac. Tortor at risus viverra adipiscing at.
-                
-                Condimentum mattis pellentesque id nibh tortor. Amet consectetur adipiscing elit ut aliquam purus sit amet. Bibendum ut tristique et egestas quis ipsum suspendisse ultrices. Turpis in eu mi bibendum. Mi in nulla posuere sollicitudin aliquam ultrices. Adipiscing elit ut aliquam purus. Amet porttitor eget dolor morbi non arcu risus quis varius. Suspendisse sed nisi lacus sed viverra tellus in. Sem fringilla ut morbi tincidunt augue interdum velit. Leo duis ut diam quam nulla porttitor massa id neque. Phasellus faucibus scelerisque eleifend donec pretium vulputate sapien. Tincidunt vitae semper quis lectus. Morbi tristique senectus et netus et malesuada fames. Adipiscing tristique risus nec feugiat in. Ac felis donec et odio pellentesque diam volutpat commodo sed.</p>
+            <div>
+                <span>À propos</span>
+                <ul>
+                    <li><a href="#">Fonctionnement du site</a></li>
+                    <li><a href="#">Conditions générales</a></li>
+                    <li><a href="#">Données et confidentialités</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>Nos hébergements</span>
+                <ul>
+                    <li><a href="#">Charte qualité</a></li>
+                    <li><a href="#">Proposer votre hôtel</a></li>
+                </ul>
+            </div>
+            <div>
+                <span>Assistance</span>
+                <ul>
+                    <li><a href="#">Centre d'aide</a></li>
+                    <li><a href="#">Nous contacter</a></li>
+                </ul>
+            </div>
         </footer>
     </div>
 </body>
