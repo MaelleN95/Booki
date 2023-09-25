@@ -6,20 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Envie de découvrir le littoral méditerranéen ? Booki est une agence de voyage vous proposant des hébergements de tous types ainsi que des activités pour découvrir la région.">
 
+    <!------- page title and logo ----->
     <title>Booki</title>
     <link rel="icon" href="./images/logo/BookiLogo.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
 
+    <!------- font ---------> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
 
+    <!------- icons library ---------> 
     <script src="https://kit.fontawesome.com/42a6605488.js" crossorigin="anonymous"></script>
 
+    <!------- link with CSS file --------->
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
     <div class="main-container">
+
+        <!----------- Header ------------->
         <header>
             <img src="./images/logo/Booki.png" alt="Logo de l'agence Booki">
             <nav>
@@ -35,6 +41,7 @@
                 <h2 class="section-title">Trouvez votre hébergement pour des vacances de rêve</h2>
                 <p>En plein centre-ville ou en pleine nature</p>
 
+        <!---------- Search ------------>
                 <form class="searchs" method="get" action="#">
                     <i class="fa-solid fa-location-dot"></i>
                     <input class="bold" type="search" value="Marseille, France">
@@ -42,6 +49,7 @@
                     <button class="button-magnifying-glass-logo bold" type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
                 </form>
 
+        <!---------- Filters ------------>        
                 <div class="filters">
                     <h3>Filtres</h3>
                     <div class="filter-selection">
@@ -59,6 +67,7 @@
                         </button>
                     </div>
                 </div>
+
                 <div class="info">
                     <i class="fa-solid fa-info"></i>
                     <p>Plus de 500 logements sont disponibles dans cette ville</p>
@@ -66,9 +75,12 @@
             </section>
 
             <div class="hebergements-and-populaires">
+
+            <!------- Hebergements part ---------> 
                 <section id="HebergementsPart" class="hebergements">
                     <h2 class="section-title">Hébergements à Marseille</h2>
                     <div class="hebergements-cards">
+                        <!--------- one hebergement card -----------> 
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -85,7 +97,9 @@
                                     </div>
                                 </div>
                             </article>
-                        </a><a href="#">
+                        </a>
+                        <!------------------------------------------> 
+                        <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
@@ -136,7 +150,6 @@
                                 </div>
                             </article>
                         </a> 
-                        
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -154,7 +167,6 @@
                                 </div>
                             </article>
                         </a>
-
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -176,12 +188,14 @@
                     <h3><a href="#">Afficher plus</a></h3>
                 </section>
 
+                <!------- Populaires part ---------> 
                 <section class="populaires">
                     <div class="populaires-title">
                         <h2 class="section-title">Les plus populaires</h2>
                         <i class="fa-solid fa-chart-line" aria-hidden="true"></i>
                     </div>
                     <div class="populaires-cards">
+                        <!--------- one populaire card ----------->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -201,6 +215,7 @@
                                 </div>
                             </article>
                         </a>
+                        <!----------------------------------------->
                         <a href="#">
                             <article class="card">
                                 <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
@@ -241,18 +256,21 @@
                         </a>
                     </div>
                 </section>
-            </div> <!-- END hebergements-and-populaires -->
+            </div>
 
+            <!------- Activities part ---------> 
             <section id="ActivitiesPart" class="activities">
                 <h2 class="section-title">Activités à Marseille</h2>
 
                 <div class="activities-cards">
+                    <!--------- one activitie card ----------->
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/reno-laithienne.jpg" alt="Image du Vieux-Port avec des immeubles au fond">
                             <h3 class="card-title">Vieux-Port</h3>
                         </article>
                     </a>
+                    <!---------------------------------------->
                     <a href="#">
                         <article class="card">
                             <img src="./images/activites/paul-hermann.jpg" alt="Image du Fort Pomègues">
@@ -276,7 +294,10 @@
             </section>
             
         </main>
+
+        <!------- footer ---------> 
         <footer>
+            <!------- 1 footer column ---------> 
             <div>
                 <span>À propos</span>
                 <ul>
@@ -285,6 +306,7 @@
                     <li><a href="#">Données et confidentialités</a></li>
                 </ul>
             </div>
+            <!-----------------------------------> 
             <div>
                 <span>Nos hébergements</span>
                 <ul>
