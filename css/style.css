@@ -1,4 +1,4 @@
-/****** General ***********/ 
+/*********** General ***********/ 
 * {
     font-family: 'Raleway', sans-serif;
 }
@@ -103,34 +103,6 @@ nav li:hover{
     transition: border-top 0.4s ease-out;
 }
 
-/***************** Footer *********************/
-footer{
-    background-color: var(--main-bg-color);
-    display: flex;
-    justify-content: space-between;
-}
-
-footer div{
-    padding: 8px;
-    display: flex;
-    flex-direction: column;
-    width: 33%;
-}
-
-footer span{
-    font-weight: 700;
-    padding: 8px;
-}
-
-footer li{
-    padding: 8px;
-}
-
-footer li:hover{
-    color: var(--main-color);
-    transition: 0.2s linear;
-}
-
 /************ search-and-filters **************/
 .search-and-filters{
     padding: 20px 0;
@@ -211,7 +183,6 @@ button[type="submit"]:hover{
 }
 
 /**************** Info *********************/
-
 .info{
     display: flex;
     align-items: center;
@@ -338,7 +309,6 @@ button[type="submit"]:hover{
 }
 
 /*************** Activities *****************/
-
 .activities {
     padding: 30px;
 }
@@ -346,7 +316,6 @@ button[type="submit"]:hover{
 .activities-cards {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .activities-cards .card {
@@ -369,20 +338,45 @@ button[type="submit"]:hover{
     height: 30px;
     display: flex;
     align-items: center;
-    padding-left: 15px;
+    padding: 0 15px 20px 15px;
     margin-top: 15px;
-    padding-bottom: 20px;
 }
 
+/***************** Footer *********************/
+footer{
+    background-color: var(--main-bg-color);
+    display: flex;
+    justify-content: space-between;
+}
+
+footer div{
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+
+footer span{
+    font-weight: 700;
+    padding: 8px;
+}
+
+footer li{
+    padding: 8px;
+}
+
+footer li:hover{
+    color: var(--main-color);
+    transition: 0.2s linear;
+}
 
 /* Le code ci-dessous correspond à la version responsive uniquement */
 
-/****** Media queries ***********/
-/* Medium devices (tablets, less/equal than 1024px) */
+/*********************** Media queries ***********************/
+/***************** Medium devices (tablets, less/equal than 1024px) *****************/
 @media (max-width: 1024px) {
 
     /* ******** filters ********* */
-
     .filters{
         flex-direction: column;
         align-items: flex-start;
@@ -401,6 +395,14 @@ button[type="submit"]:hover{
         flex-direction: column;
     }
 
+    .card-title {
+        font-size: 14px;
+    }
+
+    .card-subtitle {
+        font-size: 13px;
+    }
+
     .hebergements {
         width: 100%;
     }
@@ -412,7 +414,6 @@ button[type="submit"]:hover{
 
     .populaires-cards {
         display: flex;
-        flex-direction: row;
         justify-content: space-between;
     }
 
@@ -420,31 +421,16 @@ button[type="submit"]:hover{
         width: 30%;
     }
 
-    .populaires-cards .card-title {
-        font-size: 14px;
-    }
-
-    .populaires-cards .card-subtitle {
-        font-size: 13px;
-    }
-
     /* ****** activities ******* */
 
     .activities-cards img{
         height: 200px;
     }
-
-    .activities-cards .card-title{
-        height: 35px;
-        display: flex;
-        align-items: center;
-    }
-
 }
 
-/* Small devices (phones, less than 768px) */
+/***************** Small devices (phones, less than 768px) *****************/
 @media (max-width: 767.98px) {
-
+    /* ***** General ******* */
     section{
         margin: 15px;
     }
@@ -454,14 +440,13 @@ button[type="submit"]:hover{
         margin: 0;
     }
 
-    header img{
-        margin: 30px;
-    }
-
     /* ***** Header ******* */
-
     header{
         flex-direction: column;
+    }
+
+    header img{
+        margin: 30px;
     }
 
     nav{
@@ -502,7 +487,6 @@ button[type="submit"]:hover{
     }
 
     /* ***** Filters ******* */
-
     .filter-selection{
         width: 100%;
         display: grid;
@@ -515,7 +499,6 @@ button[type="submit"]:hover{
     }
 
     /* ***** Heb & pop ******* */
-
     .hebergements-and-populaires {
         flex-direction: column-reverse;
     }
@@ -523,10 +506,9 @@ button[type="submit"]:hover{
     .hebergements-and-populaires section{
         border-radius: 0;
     }
-    /* ***** populaires ******* */
 
+    /* ***** populaires ******* */
     .populaires{
-        background-color: var(--main-bg-color);
         margin: 0;
     }
 
@@ -543,7 +525,6 @@ button[type="submit"]:hover{
     }
 
     /* ***** hebergements ******* */
-
     .hebergements{
         background-color: unset;
         margin: 0;
@@ -555,10 +536,6 @@ button[type="submit"]:hover{
 
     .hebergements-cards a{
         width: 100%;
-    }
-
-    .hebergements-cards .card{
-        flex-direction: row;
     }
 
     .hebergements-cards a:nth-child(2){
@@ -578,7 +555,6 @@ button[type="submit"]:hover{
     }
 
     /* ***** Activities ******* */
-
     .activities-cards{
         flex-direction: column;
     }
@@ -591,13 +567,11 @@ button[type="submit"]:hover{
         width: 100%;
     }
     /* ******* Footer ********* */
-
     footer{
         flex-direction: column;
     }
 
     footer div{
         width: 100%;
-        padding: 15px;
     }
 }
