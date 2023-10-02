@@ -138,8 +138,8 @@ button[type="submit"]{
 }
 
 button[type="submit"]:hover{
-    box-shadow: inset 6.5em 0 #4F96FF;
-    transition: 1.3s cubic-bezier(.4,1.54,.5,-0.3);
+    box-shadow: inset 8em 0 #4F96FF;
+    transition: 0.5s linear;
 }
 
 .button-text{
