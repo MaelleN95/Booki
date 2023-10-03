@@ -364,9 +364,10 @@ footer div{
     width: 33%;
 }
 
-footer span{
+h4{
     font-weight: 700;
     padding: 8px;
+    margin: 0;
 }
 
 footer li{
@@ -440,7 +441,7 @@ footer li:hover{
 }
 
 /***************** Small devices (phones, less than 768px) *****************/
-@media (max-width: 767.98px) {
+@media (max-width: 768px) {
     /* ***** General ******* */
     section{
         margin: 15px;
