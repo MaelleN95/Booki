@@ -1,5 +1,7 @@
 # Intégration de l'interface visuelle et responsive avec HTML et CSS
 
+![banner-booki](https://github.com/user-attachments/assets/808cfcf2-ccfe-4291-ab2f-3c41296c897d)
+
 ## Sommaire
 
 * [Description](#description)
