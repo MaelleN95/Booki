@@ -32,8 +32,8 @@ Ce projet fait partie de ma formation sur OpenClassrooms pour le parcours [Déve
 ## Installation
 1. Clonez le repository :
    ```bash
-   git clone https://github.com/MaelleN95/OC-Projet2.git
-2. Ouvrez le fichier index.html dans votre navigateur.
+   git clone https://github.com/MaelleN95/Booki.git
+2. Ouvrez le fichier `index.html` dans votre navigateur.
 
 ## Structure du projet
 - `index.html` : Le fichier HTML principal
